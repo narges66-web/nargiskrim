@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/books.css">
+    <title>Books Categories</title>
+    <style>
+       
+        .search-bar {
+            display: flex;  justify-content: center; align-items: center; 
+            margin-top: 22px;
+        }
+
+        .search-bar input {
+            width: 700px; 
+            padding: 10px; border: 1px solid #ccc; 
+            border-radius: 4px;  font-size: 16px; 
+        }
+
+        .search-bar button {
+            margin-left: 10px; padding: 10px 15px;
+            border: none;
+            background-color: #333; color: white; 
+            border-radius: 4px; cursor: pointer; 
+            font-size: 16px; 
+            transition: background-color 0.3s ease, color 0.3s ease; 
+        }
+
+        .search-bar button:hover {
+            background-color: #555;
+        }
+
+        
+        nav {
+            display: flex; justify-content: center;background-color: black;padding: 12px; 
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white; 
+            font-weight: bold;
+            margin: 0 15px; 
+            padding: 8px 12px; 
+            border: 2px solid white; 
+            border-radius: 5px; 
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: white; 
+            color: black; 
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       
+        <div class="search-bar">
+            <form action="search-results.html" method="get">
+                <input type="text" name="search" placeholder="Search for a book...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../content/signup.html">Sign Up</a>
+            <a href="../content/login.html">Login</a>
+            <a href="../content/cart-checkout.html">My Cart</a>
+            <a href="../content/aboutUS.html">About Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Explore Our Collection</h1>
+    <section class="book-category">
+      <h2>Classics Literature</h2>
+      <div class="book-card">
+        <img src="../images/warandpeace.jpg" alt="Book Cover" class="book-image">
+        <h3 class="book-title">War and Peace</h3>
+        <button class="quick-view-btn" 
+          data-author="Leo Tolstoy"
+          data-price="$15.33"
+          data-description= "War and Peace broadly focuses on Napoleon's invasion of Russia in 1812 and follows three of the most well-known characters in literature: Pierre Bezukhov, the illegitimate son of a count who is fighting for his inheritance and yearning for spiritual fulfillment; Prince Andrei Bolkonsky, who leaves his family behind to fight in the war against Napoleon; and Natasha Rostov, the beautiful young daughter of a nobleman who intrigues both men.
+                             As Napoleon's army invades, Tolstoy brilliantly follows characters from diverse backgrounds—peasants and nobility, civilians and soldiers—as they struggle with the problems unique to their era, their history, and their culture. And as the novel progresses, these characters transcend their specificity, becoming some of the most moving—and human—figures in world literature.">
+          Quick View
+        </button>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="book-card">
+       <img src="../images/1984.jpg" alt="Book Cover" class="book-image">
+        <h3 class="book-title">1984</h3>
+        <button class="quick-view-btn" 
+          data-author="George Orwell"
+          data-price="$7.48"
+          data-description= "A masterpiece of rebellion and imprisonment where war is peace freedom is slavery and Big Brother is watching. Thought Police, Big Brother, Orwellian - these words have entered our vocabulary because of George Orwell's classic dystopian novel 1984. 
+          The story of one man's Nightmare Odyssey as he pursues a forbidden love affair through a world ruled by warring states and a power structure that controls not only information but also individual thought and memory 1984 is a prophetic haunting tale More relevant than ever before 1984 exposes the worst crimes imaginable the destruction of truth freedom and individuality.
+           With a foreword by Thomas Pynchon. This beautiful paperback edition features deckled edges and french flaps a perfect gift for any occasion ">
+          Quick View
+        </button>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="book-card">
+        <img src="../images/anna.jpg" alt="Book Cover" class="book-image">
+         <h3 class="book-title">Anna Karenina</h3>
+         <button class="quick-view-btn" 
+           data-author=" Leo Tolstoy"
+           data-price="$11.69"
+           data-description= "Acclaimed by many as the world's greatest novel, Anna Karenina provides a vast panorama of contemporary life in Russia and of humanity in general.
+            In it Tolstoy uses his intense imaginative insight to create some of the most memorable characters in all of literature. Anna is a sophisticated woman who abandons her empty existence as the wife of Karenin and turns to Count Vronsky to fulfil her passionate nature - with tragic consequences. Levin is a reflection of Tolstoy himself, often expressing the author's own views and convictions.
+           Throughout, Tolstoy points no moral, merely inviting us not to judge but to watch. As Rosemary Edmonds comments, 'He leaves the shifting patterns of the kaleidoscope to bring home the meaning of the brooding words following the title, 'Vengeance is mine, and I will repay".>
+           Quick View
+         </button>
+         <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="book-card">
+            <img src="../images/pride.jpg" alt="Book Cover" class="book-image">
+             <h3 class="book-title">Pride and Prejudice</h3>
+             <button class="quick-view-btn" 
+               data-author="Jane Austen "
+               data-price="$5.29"
+               data-description= "Pride and Prejudice has charmed generations of readers for more than two centuries. 
+               Jane Austen's much-adapted novel is famed for its witty, spirited heroine, sensational romances, and deft remarks on the triumphs and pitfalls of social convention. 
+               Author Jane Austen (1775-1817) was an English novelist whose works of social realism achieved unprecedented critical and popular success, though Austen herself remained an anonymous writer throughout her life ">
+               Quick View
+             </button>
+             <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="book-card">
+                <img src="../images/crime.jpg" alt="Book Cover" class="book-image">
+                 <h3 class="book-title">Crime and Punishment</h3>
+                 <button class="quick-view-btn" 
+                   data-author="  Fyodor Dostoevsky"
+                   data-price="$6"
+                   data-description= "Raskolnikov, a destitute and desperate former student, wanders through the slums of St Petersburg and commits a random murder without remorse or regret.
+                    He imagines himself to be a great man, a Napoleon: acting for a higher purpose beyond conventional moral law. But as he embarks on a dangerous game of cat and mouse with a suspicious police investigator, Raskolnikov is pursued by the growing voice of his conscience and finds the noose of his own guilt tightening around his neck.
+                     Only Sonya, a downtrodden sex worker, can offer the chance of redemption. ">
+                   Quick View
+                 </button>
+                 <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="book-card">
+                    <img src="../images/thekiterunner.jpg"  alt="Book Cover" class="book-image">
+                    <h3 class="book-title">The Kite Runner</h3>
+                    <button class="quick-view-btn" 
+                      data-author="Khaled Hosseini"
+                      data-price="$13.99"
+                      data-description= "The unforgettable, heartbreaking story of the unlikely friendship between a wealthy boy and the son of his father's servant, The Kite Runner is a beautifully crafted novel set in a country that is in the process of being destroyed. It is about the power of reading, the price of betrayal, and the possibility of redemption; and an exploration of the power of fathers over sons—their love, their sacrifices, their lies.
+                     A sweeping story of family, love, and friendship told against the devastating backdrop of the history of Afghanistan over the last thirty years.
+                      The Kite Runner is an unusual and powerful novel that has become a beloved, one-of-a-kind classic.">
+                      Quick View
+                    </button>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                  </div>
+                  <div class="book-card">
+                    <img src="../images/thestranger.jpg" alt="Book Cover" class="book-image">
+                   <h3 class="book-title">The Stranger</h3>
+                   <button class="quick-view-btn" 
+                     data-author="Albert Camus"
+                     data-price="$10.99"
+                     data-description="Published in 1942 by French author Albert Camus, The Stranger has long been considered a classic of twentieth-century literature.
+                      Le Monde ranks it as number one on its '100 Books of the Century' list. 
+                      Through this story of an ordinary man unwittingly drawn into a senseless murder on a sundrenched Algerian beach, Camus explores what he termed 'the nakedness of man faced with the absurd'.">
+                     Quick View
+                   </button>
+                   <button class="add-to-cart-btn">Add to Cart</button>
+                 </div>
+            </section>
+
+    <section class="book-category">
+      <h2>Fiction Books</h2>
+      <div class="book-card">
+        <img src="../images/thesilent.jpg" alt="Book Cover" class="book-image">
+        <h3 class="book-title">The Silent Patient</h3>
+        <button class="quick-view-btn" 
+          data-author="Alex Michaelides"
+          data-price="$12.67"
+          data-description="Alicia Berenson's life is seemingly perfect. A famous painter married to an in-demand fashion photographer, she lives in a grand house with big windows overlooking a park in one of London's most desirable areas. One evening her husband Gabriel returns home late from a fashion shoot, and Alicia shoots him five times in the face, and then never speaks another word.
+          Alicia's refusal to talk, or give any kind of explanation, turns a domestic tragedy into something far grander, a mystery that captures the public imagination and casts Alicia into notoriety. The price of her art skyrockets, and she, the silent patient, is hidden away from the tabloids and spotlight at the Grove, a secure forensic unit in North London.
+          Theo Faber is a criminal psychotherapist who has waited a long time for the opportunity to work with Alicia. His determination to get her to talk and unravel the mystery of why she shot her husband takes him down a twisting path into his own motivations—a search for the truth that threatens to consume him..e">
+     
+          Quick View
+        </button>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="book-card">
+        <img src="../images/merit.jpg" alt="Book Cover" class="book-image">
+        <h3 class="book-title">without Merit</h3>
+        <button class="quick-view-btn" 
+          data-author="Colleen Hoover"
+          data-price="$9.16"
+          data-description="Not every mistake deserves a consequence. Sometimes the only thing it deserves is forgiveness.
+          The Voss family is anything but normal.
+           They live in a repurposed church, newly baptized Dollar Voss. The once cancer-stricken mother lives in the basement, the father is married to the mother's former nurse, the little half-brother isn't allowed to do or eat anything fun, and the eldest siblings are irritatingly perfect.
+           Then, there's Merit.
+          Merit Voss collects trophies she hasn't earned and secrets her family forces her to keep. While browsing the local antiques shop for her next trophy, she finds Sagan.
+           His wit and unapologetic idealism disarm and spark renewed life into her—until she discovers that he's completely unavailable. Merit retreats deeper into herself, watching her family from the sidelines when she learns a secret that no trophy in the world can fix.
+          Fed up with the lies, Merit decides to shatter the happy family illusion that she's never been a part of before leaving them behind for good.">
+      
+     
+          Quick View
+        </button>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="book-card">
+        <img src="../images/seven.jpg" alt="Book Cover" class="book-image">
+        <h3 class="book-title">The Seven Husbands of Evelyn Hugo</h3>
+        <button class="quick-view-btn" 
+          data-author="Taylor Jenkins Reid"
+          data-price="17.66$"
+          data-description= "The Seven Husbands of Evelyn Hugo is a historical drama novel by American novelist Taylor Jenkins Reid, and published by Atria Books in 2017. It tells the story of the fictional Old Hollywood star, Evelyn Hugo, who, at age 79, gives a final interview to unknown journalist, Monique Grant.">
+          Quick View
+        </button>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+       
+          <div class="book-card">
+        <img src="../images/reminders.jpg" alt="Book Cover" class="book-image">
+       <h3 class="book-title">Reminders Of Him</h3>
+       <button class="quick-view-btn" 
+         data-author="Colleen Hoover"
+         data-price="$12.99"
+         data-description=" After serving five years in prison for a tragic mistake, Kenna Rowan returns to the town where it all went wrong, hoping to reunite with her four-year-old daughter.
+         But the bridges Kenna burned are proving impossible to rebuild. Everyone in her daughter's life is determined to shut Kenna out, no matter how hard she works to prove herself. 
+         The only person who hasn't closed the door on her completely is Ledger Ward, a local bar owner and one of the few remaining links to Kenna's daughter.
+          But if anyone were to discover how Ledger is slowly becoming an important part of Kenna's life, both would risk losing the trust of everyone important to them. The two form a connection despite the pressure surrounding them, but as their romance grows, so does the risk.
+         Kenna must find a way to absolve the mistakes of her past in order to build a future out of hope and healing.">
+    
+         Quick View
+       </button>
+       <button class="add-to-cart-btn">Add to Cart</button>
+     </div>
+     <div class="book-card">
+        <img src="../images/man.jpg" alt="Book Cover" class="book-image">  
+       <h3 class="book-title">A Man Called Ove </h3>
+       <button class="quick-view-btn" 
+         data-author="Fredrik Backman"
+         data-price="$9.40"
+         data-description="A Man Called Ove is a marvelous, heart-warming story about life and love.
+          It tackles hard questions while keeping things light with contemporary humor.
+           Over the course of the story, a reader of any age will grow to like and relate to Ove. Furthermore, the non-linear timeline keeps the plot interesting and suspenseful.">
+    
+         Quick View
+       </button>
+       <button class="add-to-cart-btn">Add to Cart</button>
+     </div>
+
+    </section>
+
+    <section class="book-category">
+      <h2>Self-Development</h2>
+      <div class="book-card">
+        <img src="../images/atomic.jpg" alt="Book Cover" class="book-image">
+        <h3 class="book-title">Atomic Habits</h3>
+        <button class="quick-view-btn" 
+          data-author="James Clear"
+          data-price="$14.49"
+          data-description="No matter your goals, Atomic Habits offers a proven framework for improving—every day. James Clear, one of the world's leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results.
+          If you're having trouble changing your habits, the problem isn't you.
+           The problem is your system. Bad habits repeat themselves again and again not because you don't want to change, but because you have the wrong system for change.
+            You do not rise to the level of your goals. You fall to the level of your systems.
+           Here, you'll get a proven system that can take you to new heights .
+           Atomic Habits will reshape the way you think about progress and success, and give you the tools and strategies you need to transform your habits--whether you are a team looking to win a championship, an organization hoping to redefine an industry, or simply an individual who wishes to quit smoking, lose weight, reduce stress, or achieve any other goal.">
+          Quick View
+        </button>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="book-card">
+        <img src="../images/laws.jpg" alt="Book Cover" class="book-image">
+       <h3 class="book-title">The 48 Laws of Power</h3>
+       <button class="quick-view-btn" 
+         data-author="Robert Greene "
+         data-price="$14.99"
+         data-description="Amoral, cunning, ruthless, and instructive, this piercing work distils three thousand years of the history of power into forty-eight well-explicated laws. 
+         As attention-grabbing in its design as it is in its content, this bold volume outlines the laws of power in their unvarnished essence, synthesizing the philosophies of Machiavelli, Sun-tzu, Carl von Clausewitz, and other great thinkers.
+         Some laws require prudence (Law 1: Never Outshine the Master), some stealth (Law 3: Conceal Your Intentions), and some the total absence of mercy (Law 15: Crush Your Enemy Totally), but like it or not, all have applications in real-life situations.">
+    
+          Quick View
+       </button>
+       <button class="add-to-cart-btn">Add to Cart</button>
+     </div>
+     <div class="book-card">
+        <img src="../images/becoming.jpg" alt="Book Cover" class="book-image">
+       <h3 class="book-title">Becoming</h3>
+       <button class="quick-view-btn" 
+         data-author="Michelle Obama"
+         data-price="$11.89"
+         data-description="In a life filled with meaning and accomplishment, Michelle Obama has emerged as one of the most iconic and compelling women of our era. 
+               As First Lady of the United States of America—the first African American to serve in that role—she helped create the most welcoming and inclusive White House in history, while also establishing herself as a powerful advocate for women and girls in the U.S.
+               and around the world, dramatically changing the ways that families pursue healthier and more active lives, and standing with her husband as he led America through some of its most harrowing moments.
+               Along the way, she showed us a few dance moves, crushed Carpool Karaoke, and raised two down-to-earth daughters under an unforgiving media glare.
+               In her memoir, a work of deep reflection and mesmerizing storytelling, Michelle Obama invites readers into her world, chronicling the experiences that have shaped her—from her childhood on the South Side of Chicago to her years as an executive balancing the demands of motherhood and work, to her time spent at the world's most famous address.
+               With unerring honesty and lively wit, she describes her triumphs and her disappointments, both public and private, telling her full story as she has lived it—in her own words and on her own terms.">
+         
+            Quick View
+       </button>
+       <button class="add-to-cart-btn">Add to Cart</button>
+     </div>
+     <div class="book-card">
+        <img src="../images/ikigai.jpg"alt="Book Cover" class="book-image">
+       <h3 class="book-title">Ikigai</h3>
+       <button class="quick-view-btn" 
+         data-author="Héctor García and Francesc Miralles"
+         data-price="$11.89"
+         data-description="The people of Japan believe that everyone has an ikigai-a reason to jump out of bed each morning.
+          And according to the residents of the Japanese island of Okinawa - the world's longest-living people -finding it is the key to a longer and more fulfilled life.
+           Inspiring and comforting, this book will give you the life-changing tools to uncover your personal ikigai. 
+         It will show you how to leave urgency behind, find your purpose, nurture friendships and throw yourself into your passions.">
+    
+         Quick View
+       </button>
+       <button class="add-to-cart-btn">Add to Cart</button>
+     </div>
+    </section>
+
+    <section class="book-category">
+      <h2>Arabic Books</h2>
+      <div class="book-card">
+        <img src="../images/naguib1.jpg"alt="Book Cover" class="book-image">
+       <h3 class="book-title">أولاد حارتنا</h3>
+       <button class="quick-view-btn" 
+         data-author=" نجيب محفوظ"
+         data-price="$25.00"
+         data-description=" يجلس الجبلاوي في بيته الكبير المحاط بالحدائق واﻷسوار العالية ومن حوله أحفاده الذين يتنازعون للحصول على وقفه، ويقوم الفتوات بابعاد هؤلاء عن جنته اﻷرضية، حيث استقرت ذريته خارج أسوار البيت الكبير، وبالرغم من فقرهم الا انهم لم يكفو عن الدعاء بأن ينزل الجبلاوي اليهم ويترك عزلته ويوزع تركته ويخلصهم من بطش الفتوات فيسود الخير على الجميع، ويظهر في كل جيل هذا المخلص والذي يتعلق به الناس وينتفضو معه ضد الفتوات، ولكن الجشع والجهل يرجعهم في اخر المطاف الى ما كانت عليه الاوضاع ويبقى الفقر والمعاناة مصيرهم الذي لا مفر منه.
+         يصف محفوظ في هذه الرواية الرائعة القهر وشوق الناس إلى الخلاص من أنفسهم، وكيف ان المبادئ يمكن أن تتغير بتأرجح النفوس البشرية، وكيف ان الاعمال الخيرة تقع تحت يد الفساد والمفسدين.
+         تعد هذه الرواية من أشهر روايات اﻷديب الراحل وأكثرها إشكالية وقد نوهت اﻷكاديمية السويدية بها عندما منحت نجيب محفوظ جائزة نوبل للآداب">
+    
+         Quick View
+       </button>
+       <button class="add-to-cart-btn">Add to Cart</button>
+     </div>
+     <div class="book-card">
+        <img src="../images/ikadoli.jpg"alt="Book Cover" class="book-image">
+       <h3 class="book-title">إيكادولي</h3>
+       <button class="quick-view-btn" 
+         data-author="حنان لاشين"
+         data-price="$22.00"
+         data-description="
+         إيكادولي بقلم حنان لاشين ... سعف النخيل يظلل الأفق من بعيد وكأنّه سحاب أخضر. صيحة غريبة صمّت أذنيه ثُمّ شعر فجأة بمخالب تقبض على كتفيه، فرفع بصره ورأى طائرًا عملاقًا يبسط جناحيه مظللًا فوق رأسه، تسارعت أنفاسه وهو يطير على ارتفاعٍ شاهق فوق وادٍ عميق يقطعه نهر ماؤه رقراق زمرّدي اللون! لاحت من بعيد أكواخٌ صغيرة لكنّها متقاربة مصفوفة بانتظام في مجاميع يفصل بينها ممرّات أرضها مغطاة بزهور صغيرة صفراء. تناهى إلى سمعه صوت أنثوي ناعم
+         كان يناديه ويكرر كلمة غريبة لم يدرك كنهها!
+         إيكادولي
+         إيكادولي">
+
+         Quick View
+       </button>
+       <button class="add-to-cart-btn">Add to Cart</button>
+     </div>
+     <div class="book-card">
+        <img src="../images/naguib2.jpg" alt="Book Cover" class="book-image">
+       <h3 class="book-title">ملحمة الحرافيش</h3>
+       <button class="quick-view-btn" 
+         data-author=" نجيب محفوظ"
+         data-price="$35.00"
+         data-description="
+         ﻳﺼﻒ ﻟﻨﺎ ﻧﺠﻴﺐ ﻣﺤﻔﻮﻅ ﺳﻌﻲ ﺍﻟﻨﻔﺲ ﺍﻟﺒﺸﺮﻳﺔ ﺍﻟﺪﺍﺋﻢ ﺍﻟﻰ ﺍﻟﺨﻼﺹ ﻭﺗﻤﺮﺩﻫﺎ ﻋﻠﻰ ﻧﻔﺴﻬﺎ ﺍﻟﺘﻲ ﺍﺭﺗﻀﺖ ﺑﺎﻟﻮﺍﻗﻊ ﺍﻟﻤﺮﻳﺮ، ﻓﺘﺤﺜﻬﺎ ﺩﺍﺋﻤﺎ ﺍﻟﻰ ﺍﻟﺨﻼﺹ، ﻭﺍﻟﺨﺮﻭﺝ ﻣﻦ ﻧﻔﻖ ﺍﻟﻨﻔﺲ ﺍﻟﻤﻈﻠﻢ، ﻭﻟﻜﻨﻬﺎ ﺗﺼﻄﺪﻡ ﺩﺍﺋﻤﺎ ﺑﺤﺐ ﺍﻟﺪﻧﻴﺎ ﻭﺍﻏﻮﺍﺋﺎﺗﻬﺎ ﺍﻟﻼﻣﺤﺪﻭﺩﺓ ﻭﻫﻨﺎ ﻳﻜﻮﻥ ﻣﻔﺘﺮﻕ ﺍﻟﻄﺮﻕ ﺍﻟﺬﻱ ﺗﺨﺘﺎﺭ ﻓﻴﻪ ﺍﻟﻨﻔﺲ ﺍﻣﺎ ﺍﻟﺴﻴﺮ ﻋﻠﻰ ﺧﻄﻰ ﺍﻟﺼﺎﻟﺤﻴﻦ ﺍﻷﻭﺍﺋﻞ ﺃﻭ ﺍﻟﺤﻴﺎﺩ ﻋﻦ ﻃﺮﻳﻘﻬﻢ ﻭﺍﻳﺜﺎﺭ ﺷﻬﻮﺍﺗﻬﺎ ﺍﻟﺪﺍﺧﻠﻴﺔ، ﻛﻤﺎ ﻳﺼﻒ ﻟﻨﺎ ﺍﻟﺨﻨﻮﻉ ﻭﺍﻟﺬﻝ ﺍﻟﺬﻱ ﻳﺼﻴﺐ ﺍﻟﻨﻔﺲ ﻣﻦ ﺟﺮﺍﺀ ﻳﺄﺳﻬﺎ ﻣﻦ ﺧﻼﺻﻬﺎ، ﻭﺟﻬﻠﻬﺎ ﺑﺄﻥ ﺍﻟﺨﻼﺹ ﺍﻟﺤﻘﻴﻘﻲ ﻫﻮ ﺍﻟﻨﺎﺑﻊ ﻣﻦ ﺩﺍﺧﻠﻬﺎ ﻻ ﺍﻟﻤﺴﻠﻂ ﻋﻠﻴﻬﺎ ﻣﻦ ﺍﻟﺨﺎﺭﺝ ﻓﻬﻮ ﺧﻼﺹ ﺯﺍﺋﻒ ﺳﺮﻋﺎﻥ ﻣﺎ ﻳﺘﺒﺨﺮ ﻭﻳﺬﻫﺐ ﺭﻳﺤﻪ ﻭﺗﺒﻘﻰ ﺍﻟﻨﻔﺲ ﻓﻲ ﻇﻠﻤﺎﺗﻬﺎ ﺗﺒﻜﻲ ﻋﻠﻰ ﻣﺎﺽ ﻗﺪ ﺗﻮﻟﻰ ﻭﺫﻛﺮﻳﺎﺕ ﻟﻦ ﺗﻌﻮﺩ.
+          كل ذلك في ملحمة رائعة يظهر فيها تعاقب اﻷجيال على مدى قرنين من الزمان من خلال عشر قصص لطالما كانت نبعا للسينما المصرية تنهل منه">
+    
+         Quick View
+       </button>
+       <button class="add-to-cart-btn">Add to Cart</button>
+     </div>
+     <div class="book-card">
+        <img src="../images/book2.jpg" alt="Book Cover" class="book-image">
+       <h3 class="book-title">أوراق شمعون المصري</h3>
+       <button class="quick-view-btn" 
+         data-author="أسامة عبد الرؤوف الشاذلي"
+         data-price="$30.00"
+         data-description="أوراق شمعون المصري بقلم أسامة عبد الرؤوف الشاذلي. ... وبعد… فهذا خِتامُ ما كتبَه
+
+        شمعون بن زخاري، والملقب بشَمْعون المَصْري، عن أخبارِ بني إسرائيل في برية سين، وما كان من أمرِهم منذ عبور البحر وحتى وفاة موسى بن عمران. وأعلم أني ما كتبت في هذه الرقاع إلا أحَدَ أمرين، أمر شهدته بعيني أو أمر سمعته من رجل من الرجال الثِّقات. وأُشِهد الربَّ (إيل)، أني ما بغيْتُ بهذا الكتاب مجدًا ولا شرفًا، وإنما إظهار شهادتي على جيل من شعب بني إسرائيل، اصطفاه الله وأنجاه بمعجزة من عدوِّه، ثم غضب عليه وأهلكه في تلك البرية القفراء، بعد أن أذاقه شقاء الارتحال ومرارة التيه. هذا كتاب لا أدري من سيكون قارئه، فأيًا من تكن أرجو أن تتذكر كاتب هذه الأبواب بالرحمة وأن تَدعو له بالغفران شمعون بن زخاري بن رأوبين الملقب بشمعون المصري تم في الليلة الأخيرة من الشهر الثامن لسنة ستين بعد الخروج ">
+        Quick View
+       </button>
+       <button class="add-to-cart-btn">Add to Cart</button>
+     </div>
+
+     <div class="book-card">
+        <img src="../images/egypt1.jpg" alt="Book Cover" class="book-image">
+       <h3 class="book-title">أوبال</h3>
+       <button class="quick-view-btn" 
+         data-author="حنان لاشين"
+         data-price="$22.00"
+         data-description="
+         أوبال بقلم حنان لاشين ... زمرةٌ من الخيول كانت تركض في تناسقٍ بديعٍ، على إيقاع واحد، أصوات حوافرهم وهي تقدح الأرض يتناغم مع ضربات قلوبهم المتلاحقة، كانت قوائمهم تصطف على التوازي بشكل أنيق وهم يتسابقون، وقد وحّدوا سرعتهم وكأنّهم نسيج واحد، خفّ المطر شيئًا فشيئًا حتى صار كدمع العين هتونًا رقيقًا، وانبثق قوس المطر يزيِّن صفحة السماء ويصافح خط الأفق من بعيد. صهل فرس منهم فعلت جلجلة رفاقه بأصوات صافية مُسْتَدقة، ثُمّ تقدّمهم فلاحقوه ضبحًا حتى وصلوا أخيرًا لبستان واسع أخضر مدهام. لو كنت خيلًا لأجفلت منهم، ولو كنت من البشر لأجفلت منهم أيضًا، فتلك الأصوات التي تعالت عندما هدأ كريرُ صدورهم لم تكن أصوات خيول أبدًا، بل كانت من أصوات البشر">
+    
+         Quick View
+       </button>
+       <button class="add-to-cart-btn">Add to Cart</button>
+     </div>
+     
+    </section>
+  </main>
+  <div class="popup-overlay" id="popup">
+    <div class="popup-content">
+      <span class="close-popup">&times;</span>
+      <img src="" alt="Book Cover" class="popup-book-image">
+      <h3 class="popup-book-title"></h3>
+      <p class="popup-book-author"></p>
+      <p class="popup-book-price"></p>
+      <p class="popup-book-description"></p>
+    </div>
+  </div>
+  <script src="../javascript/script.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
